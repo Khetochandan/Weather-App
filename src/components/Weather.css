@@ -1,0 +1,104 @@
+.weather {
+  place-self: center;
+  padding: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #4c69a6, #6638f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.weather:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 0 20px;
+  color: #444;
+  background: #f1f8ff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.search-bar input:focus {
+  background: #e6f4ff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar img {
+  width: 50px;
+  padding: 12px;
+  border-radius: 50%;
+  background: #f1f8ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.search-bar img:hover {
+  background: #e6f4ff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+  width: 200px;
+  margin: 20px;
+  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+}
+
+.temperature {
+  color: #fff;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 10px 0;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.weather-data {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.weather-data .col img {
+  width: 50px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
